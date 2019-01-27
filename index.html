@@ -6,33 +6,35 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="header-control_bar">
+      <div class="header-control_bar">
         <p class="control_bar-logo">
           <img href="#" alt="Логотип">
         </p>
 
         <input type="search" class="control_bar-search"  id="site-search" aria-label="Поиск:">
 
-        <p class="control_bar-favorites">Закладки:
-          <p class="favorites-count">0</p>
-        </p>
+        <a href="favorites.html">
+          <p class="control_bar-favorites">Закладки:
+            <span class="favorites-count">0</span>
+          </p>
+        </a>
 
-        <p class="control_bar-shopping_basket">Закладки:
-          <p class="shopping_basket-count">0</p>
-        </p>
+        <a href="shopping_basket.html">
+          <p class="control_bar-shopping_basket">Закладки:
+            <span class="shopping_basket-count">0</span>
+          </p>
+        </a>
 
         <a href="purchase.html" class="control_bar-purchase">Оформить заказ</a>
-      </section>
+      </div>
 
-      <section class="header-content">
+      <div class="header-content">
         <h1 class="header-content-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
         <div class="header-content-contancts">
-          <a href="call_servise.html" class="header-content-contancts-phone">
-            <p>+7 (812) 555-05-55</p>
-          </a>
+          <a href="call_servise.html" class="header-content-contancts-phone">+7 (812) 555-05-55</a>
           
-          <adress class="header-content-contancts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>
+          <address class="header-content-contancts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
 
         <ul class="header-content-user_menu">
@@ -44,7 +46,7 @@
             <a href="registration.html">Регистрация</a>
           </li>
         </ul>
-      </section>
+      </div>
 
       <nav class="header-navigation">
         <ul class="header-navigation-list">
@@ -118,16 +120,16 @@
     </main>
 
     <footer class="main-footer">
-      <section class="main-footer-navigation_block">
+      <div class="main-footer-navigation_block">
         <div>
           <p class="footer-navigation_block-logo">
             <img href="#" alt="Логотип">
           </p>
 
-          <adress>
-            <p class="footer-navigation_block-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="footer-navigation_block-adress">+7 (812) 555-05-55</p>
-          </adress>
+          <address>
+            <p class="footer-navigation_block-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="footer-navigation_block-address">+7 (812) 555-05-55</p>
+          </address>
         </div>
 
         <nav class="footer-navigation_block-navigation">
@@ -171,11 +173,11 @@
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
 
-      <section class="footer-info_block">
+      <div class="footer-info_block">
         <div class="footer-info_block-rights">
-          <p>© 2010–2017 Компания «Техномарт»</p>
+          <p>© 2010–2019 Компания «Техномарт»</p>
           <p>Все права защищены</p>
         </div>
 
@@ -210,7 +212,7 @@
           <p>Разработано —</p>
           <p>htmlacademy.ru</p>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
