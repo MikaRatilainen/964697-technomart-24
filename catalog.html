@@ -9,11 +9,11 @@
       <div class="header-control_bar">
         <p class="control_bar-logo">
           <a href="index.html">
-            <img src="img/logo.svg" width="111" height="18" alt="Логотип">
+            <img src="img/logo.svg" width="111" height="18" alt="Логотип интернет-магазина Техномарт">
           </a>
         </p>
 
-        <input type="search" class="control_bar-search"  id="site-search" aria-label="Поиск:">
+        <input type="search" class="control_bar-search" placeholder="Поиск:">
 
         <a class="control_bar-favorites" href="favorites.html">
           Закладки:<span class="favorites-count">0</span>
@@ -37,6 +37,9 @@
 
         <div class="header-content-user-controls">
           <p class="header-content-user-controls-name">Равшан Джамшутович</p>
+          <button class="header-content-user-controls-logout" type="button">
+            <img src="/img/icon-logout.svg" alt="Разлогинить пользователя">
+          </button>
           
           <ul class="header-content-user-controls-list">
             <li>
@@ -107,11 +110,50 @@
       <h2 class="main_content-title">Перфораторы</h2>
 
       <section class="main-filter">
-        <!-- Формы верстаются в следующих уроках -->
+        <h3 class="main-filter-title">Фильтр:</h3>
+        <!-- Часть секции отмечена красным -->
+
+        <form class="main-filter-form" action="https://echo.htmlacademy.ru" method="POST">
+          <h4 class="main-filter-subtitle">Производители:</h4>
+          <label class="main-filter-form-label">
+            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="BOSCH" checked>
+            BOSCH
+          </label>
+          <label class="main-filter-form-label">
+            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="ИНТЕРСКОЛ">
+            ИНТЕРСКОЛ
+          </label>
+          <label class="main-filter-form-label">
+            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="MAKITA" checked>
+            MAKITA
+          </label>
+          <label class="main-filter-form-label">
+            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="DEWALT">
+            DEWALT
+          </label>
+          <label class="main-filter-form-label">
+            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="HITACHI">
+            HITACHI
+          </label>
+
+          <hr>
+
+          <h4 class="main-filter-subtitle">Питание:</h4>
+          <label class="main-filter-form-label">
+            <input type="radio" class="main-filter-form-radio" name="power" value="Accum" checked>
+            Аккумуляторные
+          </label>
+          <label class="main-filter-form-label">
+            <input type="radio" class="main-filter-form-radio" name="power" value="Cable">
+            Сетевые
+          </label>
+
+          <button class="main-filter-form-submit" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="main-sort">
-        <!-- Формы верстаются в следующих уроках -->
+        <!-- Секция отмечена красным -->
       </section>
 
       <ul class="main-item_list">
@@ -286,6 +328,17 @@
           <a href="#">Следующая</a>
         </li>
       </ul>
+
+      <section class="modal modal_item_purches">
+        <p class="modal_item_purches-text">Товар добавлен в корзину</p>
+
+        <a class="modal_item_purches-purches" href="purches.html">Оформить заказ</a>
+        <button type="button" class="modal_item_purches-return">Продолжить покупки</button>
+        
+        <button type="button" class="modal_item_purches-close">
+          <img src="/img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно добаления товара">
+        </button>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -293,7 +346,7 @@
         <div>
           <p class="footer-navigation_block-logo">
             <a href="index.html">
-              <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип">
+              <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
             </a>
           </p>
 

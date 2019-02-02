@@ -8,10 +8,10 @@
     <header class="main-header">
       <div class="header-control_bar">
         <p class="control_bar-logo">
-          <img src="img/logo.svg" width="111" height="18" alt="Логотип">
+          <img src="img/logo.svg" width="111" height="18" alt="Логотип интернет-магазина Техномарт">
         </p>
 
-        <input type="search" class="control_bar-search"  id="site-search" aria-label="Поиск:">
+        <input type="search" class="control_bar-search" placeholder="Поиск:">
 
         <a class="control_bar-favorites" href="favorites.html">
           Закладки:<span class="favorites-count">0</span>
@@ -113,13 +113,49 @@
 
         <a class="main-contacts-link" href="write_us.html">Заблудились? Напишите нам</a>
       </section>
+
+      <section class="modal modal_map">
+        <img
+          class="modal_map-map_image"
+          src="/img/big-map/4.jpg"
+          width="940"
+          height="446"
+          alt="Наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+        >
+        
+        <button type="button" class="modal_map-close">
+          <img src="/img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно карты">
+        </button>
+      </section>
+
+      <section class="modal modal_contact_us">
+        <form class="modal_contact_us-form" action="https://echo.htmlacademy.ru" method="POST">
+          <label>
+            Ваше имя:
+            <input type="text" class="modal_contact_us-form-name" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input type="text" class="modal_contact_us-form-email" name="email" placeholder="email@example.com">
+          </label>
+          <label>
+            Текст письма:
+            <textarea type="text" class="modal_contact_us-form-text" name="text" placeholder="В свободной форме">
+          </label>
+          <button type="submit" class="modal_contact_us-form-submit">Отправить</button>
+        </form>
+
+        <button type="button" class="modal_contact_us-close">
+          <img src="/img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно отправки письма">
+        </button>
+      </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer-navigation_block">
         <div>
           <p class="footer-navigation_block-logo">
-            <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип">
+            <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
           </p>
 
           <address>
