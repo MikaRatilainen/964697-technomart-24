@@ -114,39 +114,43 @@
         <!-- Часть секции отмечена красным -->
 
         <form class="main-filter-form" action="https://echo.htmlacademy.ru" method="POST">
-          <h4 class="main-filter-subtitle">Производители:</h4>
-          <label class="main-filter-form-label">
-            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="BOSCH" checked>
-            BOSCH
-          </label>
-          <label class="main-filter-form-label">
-            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="ИНТЕРСКОЛ">
-            ИНТЕРСКОЛ
-          </label>
-          <label class="main-filter-form-label">
-            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="MAKITA" checked>
-            MAKITA
-          </label>
-          <label class="main-filter-form-label">
-            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="DEWALT">
-            DEWALT
-          </label>
-          <label class="main-filter-form-label">
-            <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="HITACHI">
-            HITACHI
-          </label>
+          <fieldset>
+            <legend class="main-filter-legend">Производители:</legend>
+            <label class="main-filter-form-label">
+              <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="BOSCH" checked>
+              BOSCH
+            </label>
+            <label class="main-filter-form-label">
+              <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="ИНТЕРСКОЛ">
+              ИНТЕРСКОЛ
+            </label>
+            <label class="main-filter-form-label">
+              <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="MAKITA" checked>
+              MAKITA
+            </label>
+            <label class="main-filter-form-label">
+              <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="DEWALT">
+              DEWALT
+            </label>
+            <label class="main-filter-form-label">
+              <input type="checkbox" class="main-filter-form-checkbox" name="producer" value="HITACHI">
+              HITACHI
+            </label>
+          </fieldset>
 
           <hr>
 
-          <h4 class="main-filter-subtitle">Питание:</h4>
-          <label class="main-filter-form-label">
-            <input type="radio" class="main-filter-form-radio" name="power" value="Accum" checked>
-            Аккумуляторные
-          </label>
-          <label class="main-filter-form-label">
-            <input type="radio" class="main-filter-form-radio" name="power" value="Cable">
-            Сетевые
-          </label>
+          <fieldset>
+            <legend class="main-filter-legend">Питание:</legend>
+            <label class="main-filter-form-label">
+              <input type="radio" class="main-filter-form-radio" name="power" value="Accum" checked>
+              Аккумуляторные
+            </label>
+            <label class="main-filter-form-label">
+              <input type="radio" class="main-filter-form-radio" name="power" value="Cable">
+              Сетевые
+            </label>
+          </fieldset>
 
           <button class="main-filter-form-submit" type="submit">Показать</button>
         </form>
