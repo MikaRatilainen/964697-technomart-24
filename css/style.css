@@ -1,5 +1,5 @@
 body {
-    font-family: 'Cuprum', 'PTSans', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.33;
     font-weight: 400;
@@ -145,7 +145,7 @@ body {
 }
 
 .main-about_us-text_content {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.85;
 }
@@ -175,7 +175,7 @@ body {
 }
 
 .main-contacts-text_content {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.85;
 }
@@ -274,20 +274,6 @@ body {
     opacity: 0.3;
 }
 
-/* почему-то смена цвета у svg не срабатывает */
-
-.header-content-user-controls-logout img {
-    color: #c5c5c5;
-}
-
-.header-content-user-controls-logout:hover img {
-    color: none;
-}
-
-.header-content-user-controls-logout:active img {
-    color: #c5c5c5;
-}
-
 .header-content-user-controls-item a {
     font-size: 16px;
     line-height: 1.13;
@@ -307,7 +293,7 @@ body {
 }
 
 .breadcrumbs-item {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.38;
     color: #000;
@@ -323,7 +309,7 @@ body {
 }
 
 .main-filter-title {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.38;
     color: #000;
@@ -332,7 +318,7 @@ body {
 }
 
 .main-filter-legend {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
@@ -340,7 +326,7 @@ body {
 }
 
 .main-filter-form-label {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 15px;
     line-height: 1.33;
     color: #000;
@@ -351,14 +337,14 @@ body {
 }
 
 .main-filter-form-submit {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: center;
 }
 
 .item_card-title {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.11;
@@ -396,7 +382,7 @@ body {
 }
 
 .item_card-old_price {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
@@ -406,7 +392,7 @@ body {
 }
 
 .item_card-new_price {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
@@ -415,7 +401,7 @@ body {
 }
 
 .main-pagination-item a {
-    font-family: 'PTSans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: center;
