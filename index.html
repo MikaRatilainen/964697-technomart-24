@@ -9,22 +9,24 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-control_bar">
-        <p class="control_bar-logo">
-          <img src="img/logo.svg" width="111" height="18" alt="Логотип интернет-магазина Техномарт">
-        </p>
-
-        <input type="search" class="control_bar-search" placeholder="Поиск:">
-
-        <a class="control_bar-favorites" href="favorites.html">
-          Закладки:<span class="favorites-count">0</span>
-        </a>
-
-        <a class="control_bar-shopping_basket" href="shopping_basket.html">
-          Корзина:<span class="shopping_basket-count">0</span>
-        </a>
-
-        <a class="control_bar-purchase" href="purchase.html">Оформить заказ</a>
+      <div class="header-control_bar-wrapper">
+        <div class="header-control_bar">
+            <div class="control_bar-logo">
+              <img src="img/logo.svg" width="111" height="18" alt="Логотип интернет-магазина Техномарт">
+            </div>
+    
+            <input type="search" class="control_bar-search" placeholder="Поиск:">
+    
+            <a class="control_bar-favorites" href="favorites.html">
+              Закладки:<span class="favorites-count">0</span>
+            </a>
+    
+            <a class="control_bar-shopping_basket" href="shopping_basket.html">
+              Корзина:<span class="shopping_basket-count">0</span>
+            </a>
+    
+            <a class="control_bar-purchase" href="purchase.html">Оформить заказ</a>
+          </div>
       </div>
 
       <div class="header-content">
@@ -84,38 +86,40 @@
 
       <!-- Основная часть главной страницы будет сверстана после следующих уроков -->
 
-      <section class="main-about_us">
-        <h2 class="main-about_us-title">Компания "Техномарт"</h2>
+      <div class="main-info">
+        <section class="main-about_us">
+          <h2 class="main-about_us-title">Компания "Техномарт"</h2>
 
-        <p class="main-about_us-text_content">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта 
-          и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
+          <p class="main-about_us-text_content">
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта 
+            и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
 
-        <p class="main-about_us-text_content">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+          <p class="main-about_us-text_content">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
 
-        <p class="main-about_us-text_content">Техномарт работает со многими транспортными компаниями:</p>
-        
-        <ul class="main-about_us-delivery_companies">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
+          <p class="main-about_us-text_content">Техномарт работает со многими транспортными компаниями:</p>
+          
+          <ul class="main-about_us-delivery_companies">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
 
-        <a class="main-about_us-link" href="about_us.html">Подробнее о компании</a>
-      </section>
+          <a class="main-about_us-link" href="about_us.html">Подробнее о компании</a>
+        </section>
 
-      <section class="main-contacts">
-        <h2 class="main-contacts-title">Контакты</h2>
+        <section class="main-contacts">
+          <h2 class="main-contacts-title">Контакты</h2>
 
-        <p class="main-contacts-text_content">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p class="main-contacts-text_content">Вы можете забрать товар сами, заехав в наш офис:</p>
 
-        <a class="main-contacts-map" href="map_servise.html">
-          <img class="main-contacts-map" src="img/map/5.jpg" width="300" height="158" alt="Карта проезда">
-        </a>
+          <a class="main-contacts-map" href="map_servise.html">
+            <img class="main-contacts-map" src="img/map/5.jpg" width="300" height="158" alt="Карта проезда">
+          </a>
 
-        <a class="main-contacts-link" href="write_us.html">Заблудились? Напишите нам</a>
-      </section>
+          <a class="main-contacts-link" href="write_us.html">Заблудились? Напишите нам</a>
+        </section>
+      </div>
 
       <section class="modal modal_map">
         <img
@@ -157,9 +161,9 @@
     <footer class="main-footer">
       <div class="main-footer-navigation_block">
         <div>
-          <p class="footer-navigation_block-logo">
+          <div class="footer-navigation_block-logo">
             <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
-          </p>
+          </div>
 
           <address>
             <p class="footer-navigation_block-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -210,42 +214,44 @@
         </nav>
       </div>
 
-      <div class="footer-info_block">
-        <div class="footer-info_block-rights">
-          <p>© 2010–2019 Компания «Техномарт»</p>
-          <p>Все права защищены</p>
-        </div>
+      <div class="footer-info_block-wrapper">
+        <div class="footer-info_block">
+          <div class="footer-info_block-rights">
+            <p>© 2010–2019 Компания «Техномарт»</p>
+            <p>Все права защищены</p>
+          </div>
 
-        <div class="footer-info_block-social_buttons">
-          <ul class="footer-info_block-social_buttons-list">
-            <li>
-              <a href="#">
-                <img src="img/vk-icon.svg" width="26" height="15" alt="Ссылка на группу Вконтакте">
-              </a>
-            </li>
+          <div class="footer-info_block-social_buttons">
+            <ul class="footer-info_block-social_buttons-list">
+              <li>
+                <a href="#">
+                  <img src="img/vk-icon.svg" width="26" height="15" alt="Ссылка на группу Вконтакте">
+                </a>
+              </li>
 
-            <li>
-              <a href="#">
-                <img src="img/fb-icon.svg" width="12" height="22" alt="Ссылка на группу Facebook">
-              </a>
-            </li>
+              <li>
+                <a href="#">
+                  <img src="img/fb-icon.svg" width="12" height="22" alt="Ссылка на группу Facebook">
+                </a>
+              </li>
 
-            <li>
-              <a href="#">
-                <img src="img/insta-icon.svg" width="21" height="21" alt="Ссылка на группу Instagram">
-              </a>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <a href="#">
+                  <img src="img/insta-icon.svg" width="21" height="21" alt="Ссылка на группу Instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer-info_block-contact_us">
-          <p>Обратная связь:</p>
-          <a href="#">mail@htmlacademy.ru</a>
-        </div>
+          <div class="footer-info_block-contact_us">
+            <p>Обратная связь:</p>
+            <a href="#">mail@htmlacademy.ru</a>
+          </div>
 
-        <div class="footer-info_block-developer">
-          <p>Разработано —</p>
-          <a href="#">htmlacademy.ru</a>
+          <div class="footer-info_block-developer">
+            <p>Разработано —</p>
+            <a href="#">htmlacademy.ru</a>
+          </div>
         </div>
       </div>
     </footer>
