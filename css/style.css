@@ -5,6 +5,11 @@ body {
     font-weight: 400;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .main-header {
     padding-bottom: 60px;
 
@@ -19,8 +24,6 @@ body {
 
 .header-control_bar {
     display: flex;
-    width: 940px;
-    margin: 0 auto;
     align-items: center;
 
     font-size: 17px;
@@ -116,8 +119,7 @@ body {
 
 .header-content {
     display: flex;
-    width: 940px;
-    margin: 46px auto 0 auto;
+    margin-top: 46px;
 }
 
 .header-content-title {
@@ -204,9 +206,8 @@ body {
 
 .header-navigation-list {
     display: flex;
-    width: 940px;
     height: 60px;
-    margin: 44px auto 0 auto;
+    margin-top: 44px;
     box-sizing: border-box;
 
     background-color: #32425c;
@@ -234,9 +235,7 @@ body {
 
 .main-info {
     display: flex;
-    width: 940px;
     padding-top: 80px;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -342,9 +341,7 @@ body {
 
 .main-footer-navigation_block {
     display: flex;
-    width: 940px;
     padding-bottom: 50px;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -413,8 +410,6 @@ body {
 
 .footer-info_block {
     display: flex;
-    width: 940px;
-    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 35px;
 
@@ -537,9 +532,9 @@ body {
 
 .main_content-breadcrumbs {
     display: flex;
-    width: 940px;
     padding: 0;
-    margin: 25px auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .main_content-breadcrumbs li {
@@ -562,9 +557,7 @@ body {
 
 .main_content-title {
     display: block;
-    width: 940px;
     padding: 30px;
-    margin: 0 auto;
     box-sizing: border-box;
 
     font-size: 30px;
@@ -576,8 +569,7 @@ body {
 
 .main_content-wrapper {
     display: flex;
-    width: 940px;
-    margin: 20px auto 0 auto;
+    margin-top: 20px;
 }
 
 .main-filter {
