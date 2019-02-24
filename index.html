@@ -18,11 +18,13 @@
             <input type="search" class="control_bar-search" placeholder="Поиск:">
 
             <a class="control_bar-favorites centered_content" href="favorites.html">
-              Закладки:<span class="favorites-count">0</span>
+              <span class="favorites-title">Закладки:</span>
+              <span class="favorites-count">0</span>
             </a>
 
             <a class="control_bar-shopping_basket centered_content" href="shopping_basket.html">
-              Корзина:<span class="shopping_basket-count">0</span>
+              <span class="shopping_basket-title">Корзина:</span>
+              <span class="shopping_basket-count">0</span>
             </a>
 
             <a class="control_bar-purchase centered_content" href="purchase.html">Оформить заказ</a>
@@ -40,11 +42,15 @@
 
         <ul class="header-content-user_menu">
           <li class="user_menu-login">
-            <a class="centered_content" href="login.html">Войти</a>
+            <a class="user_menu-login-link centered_content" href="login.html">
+                <span>Войти</span>
+            </a>
           </li>
 
           <li class="user_menu-registration">
-            <a class="centered_content" href="registration.html">Регистрация</a>
+            <a class="user_menu-registration-link centered_content" href="registration.html">
+              <span>Регистрация</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -122,8 +128,15 @@
       </div>
 
       <section class="modal modal_map container">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/-/CCQwn6I~"
+          width="940"
+          height="446"
+          frameborder="1"
+          allowfullscreen="true">
+        </iframe>
         <img
-          class="modal_map-map_image"
+          class="modal_map-map_image visually_hidden"
           src="img/big-map/4.jpg"
           width="940"
           height="446"
@@ -258,5 +271,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
