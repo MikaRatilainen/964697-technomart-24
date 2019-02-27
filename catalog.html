@@ -134,27 +134,27 @@
             <fieldset>
               <legend class="main-filter-legend">Производители:</legend>
               <label class="main-filter-form-label">
-                <input class="main-filter-form-label-checkbox" type="checkbox" class="main-filter-form-checkbox" name="producer" value="BOSCH" checked>
+                <input class="main-filter-form-label-checkbox" type="checkbox" name="producer" value="BOSCH" checked>
                 <span class="checkbox-indicator"></span>
                 <span>BOSCH</span>
               </label>
               <label class="main-filter-form-label">
-                <input class="main-filter-form-label-checkbox" type="checkbox" class="main-filter-form-checkbox" name="producer" value="ИНТЕРСКОЛ">
+                <input class="main-filter-form-label-checkbox" type="checkbox" name="producer" value="ИНТЕРСКОЛ">
                 <span class="checkbox-indicator"></span>
                 <span>ИНТЕРСКОЛ</span>
               </label>
               <label class="main-filter-form-label">
-                <input class="main-filter-form-label-checkbox" type="checkbox" class="main-filter-form-checkbox" name="producer" value="MAKITA" checked>
+                <input class="main-filter-form-label-checkbox" type="checkbox" name="producer" value="MAKITA" checked>
                 <span class="checkbox-indicator"></span>
                 <span>MAKITA</span>
               </label>
               <label class="main-filter-form-label">
-                <input class="main-filter-form-label-checkbox" type="checkbox" class="main-filter-form-checkbox" name="producer" value="DEWALT">
+                <input class="main-filter-form-label-checkbox" type="checkbox" name="producer" value="DEWALT">
                 <span class="checkbox-indicator"></span>
                 <span>DEWALT</span>
               </label>
               <label class="main-filter-form-label">
-                <input class="main-filter-form-label-checkbox" type="checkbox" class="main-filter-form-checkbox" name="producer" value="HITACHI">
+                <input class="main-filter-form-label-checkbox" type="checkbox" name="producer" value="HITACHI">
                 <span class="checkbox-indicator"></span>
                 <span>HITACHI</span>
               </label>
@@ -182,7 +182,12 @@
 
         <div class="main-shop">
           <section class="main-sort">
-            <!-- Секция отмечена красным -->
+            <h3 class="main-sort-title">Сортировка:</h3>
+            <a class="main-sort-text_button main-sort-text_button-active">По цене</a>
+            <a class="main-sort-text_button">По типу</a>
+            <a class="main-sort-text_button">По функционалу</a>
+            <a class="main-sort-image_button">№</a>
+            <a class="main-sort-image_button">$</a>
           </section>
 
           <ul class="main-item_list">
@@ -385,17 +390,19 @@
             </li>
           </ul>
         </div>
+      </div>
 
-        <section class="modal modal_item_purches">
-          <p class="modal_item_purches-text">Товар добавлен в корзину!</p>
-
-          <div class="modal_item_purches-buttons_wrapper">
-            <a class="modal_item_purches-purches centered_content" href="purches.html">Оформить заказ</a>
-            <button type="button" class="modal_item_purches-return centered_content">Продолжить покупки</button>
+      <div class="main-good_description-wrapper">
+        <section class="main-good_description container">
+          <h3 class="main-good_description-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
+          <div class="main-good_description-text-wrapper">
+            <p class="main-good_description-text">
+              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            </p>
+            <p class="main-good_description-text">
+              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
           </div>
-          <button type="button" class="modal_item_purches-close">
-            <img src="img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно добаления товара">
-          </button>
         </section>
       </div>
     </main>
@@ -497,6 +504,18 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal_item_purches">
+      <h2 class="modal_item_purches-text">Товар добавлен в корзину!</h2>
+
+      <div class="modal_item_purches-buttons_wrapper">
+        <a class="modal_item_purches-purches centered_content" href="purches.html">Оформить заказ</a>
+        <button type="button" class="modal_item_purches-return centered_content">Продолжить покупки</button>
+      </div>
+      <button type="button" class="modal_item_purches-close">
+        <img src="img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно добаления товара">
+      </button>
+    </section>
 
     <script src="./js/catalog.js"></script>
   </body>

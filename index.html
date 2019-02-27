@@ -126,52 +126,6 @@
           <a class="main-contacts-link centered_content" href="write_us.html">Заблудились? Напишите нам</a>
         </section>
       </div>
-
-      <section class="modal modal_map container">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/-/CCQwn6I~"
-          width="940"
-          height="446"
-          frameborder="1"
-          allowfullscreen="true">
-        </iframe>
-        <img
-          class="modal_map-map_image visually_hidden"
-          src="img/big-map/4.jpg"
-          width="940"
-          height="446"
-          alt="Наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
-        >
-
-        <button type="button" class="modal_map-close">
-          <img src="img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно карты">
-        </button>
-      </section>
-
-      <section class="modal modal_contact_us container">
-        <form class="modal_contact_us-form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="modal_contact_us-form-name">
-            Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-          <label class="modal_contact_us-form-email">
-            Ваш e-mail:
-            <input type="text" name="email" placeholder="email@example.com">
-          </label>
-          <label class="modal_contact_us-form-text">
-            Текст письма:
-            <textarea name="text" placeholder="В свободной форме"></textarea>
-          </label>
-          <div class="modal_contact_us-form-submit_wrapper">
-            <button type="submit" class="modal_contact_us-form-submit">Отправить</button>
-          </div>
-
-        </form>
-
-        <button type="button" class="modal_contact_us-close">
-          <img src="img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно отправки письма">
-        </button>
-      </section>
     </main>
 
     <footer class="main-footer">
@@ -271,6 +225,50 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal_map container">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/-/CCQwn6I~"
+        width="940"
+        height="446">
+      </iframe>
+      <img
+        class="modal_map-map_image visually_hidden"
+        src="img/big-map/4.jpg"
+        width="940"
+        height="446"
+        alt="Наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+      >
+
+      <button type="button" class="modal_map-close">
+        <img src="img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно карты">
+      </button>
+    </section>
+
+    <section class="modal modal_contact_us container">
+      <form class="modal_contact_us-form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="modal_contact_us-form-name">
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="modal_contact_us-form-email">
+          Ваш e-mail:
+          <input type="text" name="email" placeholder="email@example.com">
+        </label>
+        <label class="modal_contact_us-form-text">
+          Текст письма:
+          <textarea name="text" placeholder="В свободной форме"></textarea>
+        </label>
+        <div class="modal_contact_us-form-submit_wrapper">
+          <button type="submit" class="modal_contact_us-form-submit">Отправить</button>
+        </div>
+
+      </form>
+
+      <button type="button" class="modal_contact_us-close">
+        <img src="img/red-cross.svg" width="21" height="21" alt="Закрыть модальное окно отправки письма">
+      </button>
+    </section>
 
     <script src="./js/index.js"></script>
   </body>
