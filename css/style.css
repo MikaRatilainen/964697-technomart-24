@@ -382,6 +382,38 @@ body {
     padding-right: 55px;
 }
 
+.main-promo-banner {
+    position: relative;
+
+    width: 300px;
+    height: 123px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    overflow: hidden;
+
+    background-color: #ffbf47;
+}
+
+.main-promo-banner:first-child {
+    margin-left: 0;
+}
+
+.nearby_float {
+    margin-left: 20px;
+}
+
+.main-promo-slider {
+    position: relative;
+
+    width: 620px;
+    height: 266px;
+    margin-top: 20px;
+    float: left;
+
+    background-color: #ffbf47;
+}
+
 .main-info {
     display: flex;
     padding-top: 80px;
@@ -506,6 +538,14 @@ body {
 
 .modal-opened {
     display: block;
+
+    animation: dropToCenter 0.7s;
+}
+
+.modal-contact_us-opened {
+    display: block;
+
+    animation: appearFromBottom 0.7s;
 }
 
 .modal_map {
@@ -1280,6 +1320,7 @@ body {
 
 .main-sort-title {
     font-size: inherit;
+    font-weight: 400;
     color: #000;
 }
 
@@ -1683,4 +1724,34 @@ body {
     border: none;
 
     background-color: transparent;
+}
+
+/* Анимация модального окна */
+
+@keyframes dropToCenter {
+    0% {
+        transform: translateY(-2000px)
+    }
+
+    70% {
+        transform: translateY(30px)
+    }
+
+    90% {
+        transform: translateY(-15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes appearFromBottom {
+    0% {
+        transform: translateY(300px) scale(0)
+    }
+
+    100% {
+        transform: translateY(0) scale(1)
+    }
 }

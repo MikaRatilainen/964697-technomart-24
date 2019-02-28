@@ -20,12 +20,59 @@ var contactUsOpenButton = document.querySelector('.main-contacts-link');
 var contactUsCloseButton = document.querySelector('.modal_contact_us-close');
 var contactUsModal = document.querySelector('.modal_contact_us');
 
+var form = document.querySelector('.modal_contact_us-form');
+var userName = form.querySelector('.modal_contact_us-form-name input');
+var email = form.querySelector('.modal_contact_us-form-email input');
+var text = form.querySelector('.modal_contact_us-form-text textarea');
+
+hasLocalStorageName = true;
+hasLocalStorageEmail = true;
+storageName = '';
+storageEmail = '';
+
+try {
+    storageName = localStorage.getItem('userName');
+    storageEmail = localStorage.getItem('email');
+} catch {
+    isLocalStorageSupports = false;
+}
+
 contactUsOpenButton.addEventListener('click', function(e){
     e.preventDefault();
-    contactUsModal.classList.add('modal-opened');
+    contactUsModal.classList.add('modal-contact_us-opened');
+
+    if (storageName && storageEmail) {
+        name.value = storageName;
+        email.value = storageEmail
+        text.focus();
+    } else {
+        userName.focus();
+    }
+
 })
 
 contactUsCloseButton.addEventListener('click', function(e){
     e.preventDefault();
-    contactUsModal.classList.remove('modal-opened');
+    contactUsModal.classList.remove('modal-contact_us-opened');
+})
+
+form.addEventListener('submit', function(e) {
+    if (!userName.value || !email.value || !text.value) {
+        e.preventDefault();
+        console.log('Заполните все поля формы')
+    } else {
+        if (isLocalStorageSupports) {
+            localStorage.setItem('userName', userName.value);
+            localStorage.setItem('email', email.value);
+        }
+    }
+})
+
+window.addEventListener('keydown', function(e) {
+    if (e.keyCode === 27) {
+        e.preventDefault();
+        if (contactUsModal.classList.contains('modal-contact_us-opened')) {
+            contactUsModal.classList.remove('modal-contact_us-opened');
+        }
+    }
 })
