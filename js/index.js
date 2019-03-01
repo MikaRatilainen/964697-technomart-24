@@ -14,6 +14,30 @@ mapCloseButton.addEventListener('click', function(e){
     mapModal.classList.remove('modal-opened');
 })
 
+// purches modal
+
+var buyItemOpenButtons = document.querySelectorAll('.item_card-button-buy');
+var buyItemCloseButton = document.querySelector('.modal_item_purches-close');
+var buyItemReturnButton = document.querySelector('.modal_item_purches-return');
+var buyItemModal = document.querySelector('.modal_item_purches');
+
+buyItemOpenButtons.forEach(function(button){
+    button.addEventListener('click', function(e){
+        e.preventDefault();
+        buyItemModal.classList.add('modal-opened');
+    });
+})
+
+buyItemCloseButton.addEventListener('click', function(e){
+    e.preventDefault();
+    buyItemModal.classList.remove('modal-opened');
+})
+
+buyItemReturnButton.addEventListener('click', function(e){
+    e.preventDefault();
+    buyItemModal.classList.remove('modal-opened');
+})
+
 // contact us modal
 
 var contactUsOpenButton = document.querySelector('.main-contacts-link');

@@ -382,13 +382,17 @@ body {
     padding-right: 55px;
 }
 
+.main-promo {
+    height: 409px;
+    margin-top: 59px;
+}
+
 .main-promo-banner {
     position: relative;
 
     width: 300px;
     height: 123px;
     margin-left: 20px;
-    margin-top: 20px;
     float: left;
     overflow: hidden;
 
@@ -399,7 +403,8 @@ body {
     margin-left: 0;
 }
 
-.nearby_float {
+.nearby_slider {
+    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -412,6 +417,96 @@ body {
     float: left;
 
     background-color: #ffbf47;
+}
+
+.main-best_sells {
+    margin-top: 53px;
+}
+
+.main-best_sells-title {
+    justify-content: space-between;
+    padding: 0 24px 0 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    background-color: #f9f5f0;
+}
+
+.main-best_sells-title h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase
+}
+
+.main-best_sells-title a {
+    width: 253px;
+    height: 38px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 1.29;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #ee3643;
+}
+
+.main-best_brands {
+    margin-top: 21px;
+}
+
+.main-best_brands-title {
+    justify-content: space-between;
+    padding: 0 24px 0 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    background-color: #f9f5f0;
+}
+
+.main-best_brands-title h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase
+}
+
+.main-best_brands-title a {
+    width: 253px;
+    height: 38px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 1.29;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #ee3643;
+}
+
+.main-best_brands-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-best_brands-item {
+    width: 220px;
+    height: 145px;
+    border: solid 1px #eaeaea;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-top: 20px;
+
+    background-color: #ffffff;
+}
+
+.main-best_brands-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .main-info {
