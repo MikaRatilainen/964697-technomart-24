@@ -91,22 +91,54 @@
     <main class="main_content">
 
       <section class="main-promo container">
+        <h2 class="visually_hidden">Баннеры</h2>
         <div class="main-promo-banner">
-            <p class="item_card-flag centered_content item_card-flag-show">new</p>
+          <h3>Материалы</h3>
+          <a class="centered_content" href="#">На любой вкус</a>
+          <p class="item_card-flag centered_content item_card-flag-show">new</p>
         </div>
         <div class="main-promo-banner">
-            <p class="item_card-flag centered_content">new</p>
+          <h3>Инструмент</h3>
+          <a class="centered_content" href="#">На все случаи</a>
+          <p class="item_card-flag centered_content">new</p>
         </div>
         <div class="main-promo-banner">
-            <p class="item_card-flag centered_content">new</p>
+          <h3>Техника</h3>
+          <a class="centered_content" href="#">Для стройки</a>
+          <p class="item_card-flag centered_content">new</p>
         </div>
         <div class="main-promo-slider">
+          <input type="radio" id="radio-left" name="slider" class="visually_hidden" checked>
+          <input type="radio" id="radio-right" name="slider" class="visually_hidden">
+
+          <label class="main-promo-slider-label" for="radio-left">
+            <span></span>
+          </label>
+          <label class="main-promo-slider-label" for="radio-right">
+            <span></span>
+          </label>
+
+          <div class="main-promo-slider-slide">
+            <h3>Дрели</h3>
+            <p>Соседям на радость!</p>
+            <a class="centered_content" href="#">Открыть каталог</a>
+          </div>
+
+          <div class="main-promo-slider-slide">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <a class="centered_content" href="#">Открыть каталог</a>
+          </div>
         </div>
         <div class="main-promo-banner nearby_slider">
-            <p class="item_card-flag centered_content">new</p>
+          <h3>Скидки 50%</h3>
+          <a class="centered_content" href="#">На 350 товаров</a>
+          <p class="item_card-flag centered_content">new</p>
         </div>
         <div class="main-promo-banner nearby_slider">
-            <p class="item_card-flag centered_content">new</p>
+          <h3>Доставка</h3>
+          <a class="centered_content" href="#">Бесплатно</a>
+          <p class="item_card-flag centered_content">new</p>
         </div>
       </section>
 
@@ -202,7 +234,7 @@
 
       <section class="main-best_brands container">
         <div class="main-best_brands-title centered_content">
-          <h2>Популярные ПРОИзводители:</h2>
+          <h2>Популярные Производители:</h2>
           <a class="centered_content" href="#">все производители</a>
         </div>
 
@@ -246,7 +278,63 @@
         </div>
       </section>
 
-      <!-- Основная часть главной страницы будет сверстана после следующих уроков -->
+
+      <section class="main-services">
+        <div class="container">
+          <h2 class="main-services-title">Сервисы</h2>
+          <p class="main-services-description">
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            <br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+
+          <div class="main-services-slider">
+            <input type="radio" name="service" id="delivery" class="visually_hidden" checked />
+            <input type="radio" name="service" id="guarantee" class="visually_hidden" />
+            <input type="radio" name="service" id="credit" class="visually_hidden" />
+
+            <div class="main-services-slider-menu">
+              <label for="delivery">Доставка</label>
+              <label for="guarantee">Гарантия</label>
+              <label for="credit">Кредит</label>
+            </div>
+
+            <div class="main-services-slider-slides">
+              <div class="main-services-slider-slide">
+                <h3>Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </div>
+
+              <div class="main-services-slider-slide">
+                <h3>Гарантия</h3>
+                <p>
+                    Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием,<br>
+                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                    сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                </p>
+              </div>
+
+              <div class="main-services-slider-slide">
+                <h3>Кредит</h3>
+                <p>
+                    Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                </p>
+                <a href="#" class="centered_content">ОТПРАВИТЬ ЗАЯВКУ</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       <div class="main-info container">
         <section class="main-about_us">
