@@ -71,6 +71,10 @@ body {
     background-color: #ba2732;
 }
 
+.control_bar-search-form {
+    display: flex;
+}
+
 .control_bar-search {
     position: relative;
 
@@ -79,6 +83,7 @@ body {
     padding-left: 50px;
     border: none;
     flex-grow: 1;
+    outline: none;
 
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 17px;
