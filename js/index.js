@@ -57,7 +57,7 @@ storageEmail = '';
 try {
     storageName = localStorage.getItem('userName');
     storageEmail = localStorage.getItem('email');
-} catch {
+} catch(error) {
     isLocalStorageSupports = false;
 }
 
