@@ -1729,7 +1729,7 @@ body {
     top: -3px;
 
     display: block;
-    width: 23px;
+    width: 27px;
     height: 23px;
 
     content: '';
@@ -1754,11 +1754,6 @@ body {
 .main-filter-form-label-checkbox:disabled ~ span {
     opacity: 0.4;
     cursor: auto;
-}
-
-.main-filter-form-label span {
-    padding-left: 10px;
-    text-transform: uppercase;
 }
 
 .radio-indicator {
@@ -1792,6 +1787,12 @@ body {
 .main-filter-form-label-radio:disabled ~ span {
     opacity: 0.4;
     cursor: auto;
+}
+
+.main-filter-form-label-text {
+    margin-left: 35px;
+
+    text-transform: uppercase;
 }
 
 .main-filter-form-submit {
@@ -1949,6 +1950,7 @@ body {
     line-height: 1.29;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
 
     box-shadow: inset 0px -3px 0 0 #367315;
     background-color: #63a63e;
@@ -1979,6 +1981,7 @@ body {
     line-height: 1.29;
     text-align: center;
     color: #32425c;
+    text-transform: uppercase;
 
     background: transparent;
 
